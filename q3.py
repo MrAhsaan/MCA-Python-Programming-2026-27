@@ -7,13 +7,13 @@ tax = 0.10
 energy_charges = 0
 
 if units <= 100:
-    # Slab 1: Up to 100 units
+   
     energy_charges = units * 3.00
 elif units <= 300:
-    # Slab 2: First 100 units at 3.00, remaining at 5.00
+    
     energy_charges = (100 * 3.00) + ((units - 100) * 5.00)
 else:
-    # Slab 3: First 100 at 3.00, next 200 at 5.00, remaining at 8.00
+    
     energy_charges = (100 * 3.00) + (200 * 5.00) + ((units - 300) * 8.00)
 
 Electric_Tax = energy_charges * tax
