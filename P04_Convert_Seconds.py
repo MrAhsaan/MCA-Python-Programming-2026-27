@@ -2,8 +2,10 @@
 
 time_duration = int(input("Enter time duration in Seconds: "))
 
-Minutes = (time_duration / 60)
-Hours = (time_duration /  3600)
+hour = time_duration // 3600
+rem_sec = time_duration % 3600
 
-print("Minutes: ",Minutes)
-print("Hours: ",Hours)
+minute = time_duration // 60
+sec = time_duration % 60
+
+print(f"{hour} Hours: {minute} Minute: {sec} Seconds ")
