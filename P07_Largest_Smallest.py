@@ -1,6 +1,5 @@
 #7. Write a Python program to accept three numbers and determine the largest and smallest number using decision-making statements.
 
-# Program to find the largest and smallest of three numbers
 
 n1 = int(input("Enter First Number: "))
 n2 = int(input("Enter Second Number: "))
