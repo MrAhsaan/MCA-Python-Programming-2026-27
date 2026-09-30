@@ -3,7 +3,7 @@
 item_total_list = []
 
 for i in range(1, 4):
-    # Added a colon and space for better input visibility
+    
     price = float(input(f"Enter Price of Product{i}: ")) 
     quantity = int(input(f"Enter Quantity of Product{i}: "))
     item_total = price * quantity
@@ -17,8 +17,7 @@ discounted_price = sub_total - discount_amt
 
 gst_amt = discounted_price * GST 
 total_payable = discounted_price + gst_amt
-
-# Displaying results rounded to 2 decimal places
+
 print("\n--- BILL ---")
 print("Sub Total    : ", round(sub_total, 2))
 print("Discount (-) : ", round(discount_amt, 2))
